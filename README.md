@@ -1,0 +1,1 @@
+Red Hat Universal Base Image (UBI) based images.
