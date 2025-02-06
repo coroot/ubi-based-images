@@ -1,11 +1,14 @@
-FROM prom/prometheus:v2.54.1 AS base
+FROM prom/prometheus:v2.55.1 AS base
 
 FROM registry.access.redhat.com/ubi9/ubi
 
 LABEL name="prometheus" \
       vendor="Coroot, Inc." \
-      version=2.54.1 \
-      summary="The Prometheus monitoring system and time series database."
+      maintainer="Coroot, Inc." \
+      version=2.55.1 \
+      release="1" \
+      summary="Prometheus" \
+      description="Prometheus UBI-based image."
 
 COPY LICENSE /licenses/LICENSE
 
