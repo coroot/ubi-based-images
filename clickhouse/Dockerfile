@@ -1,11 +1,14 @@
-FROM clickhouse/clickhouse-server:24.8.4 AS base
+FROM clickhouse/clickhouse-server:25.1.3 AS base
 
 FROM registry.access.redhat.com/ubi9/ubi
 
 LABEL name="clickhouse" \
       vendor="Coroot, Inc." \
-      version=24.8.4 \
-      summary="ClickHouse® is a real-time analytics DBMS."
+      maintainer="Coroot, Inc." \
+      version=25.1.3 \
+      release="1" \
+      summary="ClickHouse" \
+      description="ClickHouse UBI-based image."
 
 COPY LICENSE /licenses/LICENSE
 
