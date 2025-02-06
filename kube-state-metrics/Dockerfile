@@ -1,11 +1,14 @@
-FROM registry.k8s.io/kube-state-metrics/kube-state-metrics:v2.13.0 AS base
+FROM registry.k8s.io/kube-state-metrics/kube-state-metrics:v2.15.0 AS base
 
 FROM registry.access.redhat.com/ubi9/ubi
 
 LABEL name="kube-state-metrics" \
       vendor="Coroot, Inc." \
-      version=2.13.0 \
-      summary="Add-on agent to generate and expose cluster-level metrics."
+      maintainer="Coroot, Inc." \
+      version=2.15.0 \
+      release="1" \
+      summary="Kube-state-metrics" \
+      description="Kube-state-metrics UBI-based image."
 
 COPY LICENSE /licenses/LICENSE
 
