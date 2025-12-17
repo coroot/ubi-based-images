@@ -5,7 +5,7 @@ FROM registry.access.redhat.com/ubi9/ubi
 LABEL name="clickhouse" \
       vendor="Coroot, Inc." \
       maintainer="Coroot, Inc." \
-      version=25.1.3 \
+      version=25.11.2 \
       release="1" \
       summary="ClickHouse" \
       description="ClickHouse UBI-based image."
