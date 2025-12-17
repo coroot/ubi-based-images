@@ -1,4 +1,4 @@
-FROM clickhouse/clickhouse-server:25.1.3 AS base
+FROM clickhouse/clickhouse-server:25.11.2 AS base
 
 FROM registry.access.redhat.com/ubi9/ubi
 
