@@ -1,11 +1,11 @@
-FROM clickhouse/clickhouse-server:25.11.2 AS base
+FROM clickhouse/clickhouse-server:26.10.3 AS base
 
 FROM registry.access.redhat.com/ubi9/ubi
 
 LABEL name="clickhouse" \
       vendor="Coroot, Inc." \
       maintainer="Coroot, Inc." \
-      version=25.11.2 \
+      version=26.10.3 \
       release="1" \
       summary="ClickHouse" \
       description="ClickHouse UBI-based image."
